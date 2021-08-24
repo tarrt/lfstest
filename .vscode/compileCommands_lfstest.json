@@ -1,0 +1,27 @@
+[
+	{
+		"file": "/Users/tiborhencz/Downloads/new/lfstest/Source/lfstest/lfstest.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/tiborhencz/Downloads/new/lfstest/.vscode/compileCommands_lfstest/lfstest.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/tiborhencz/Downloads/new/lfstest/Source/lfstest/lfstest.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/tiborhencz/Downloads/new/lfstest/.vscode/compileCommands_lfstest/lfstest.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/tiborhencz/Downloads/new/lfstest/Source/lfstest/lfstest.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/tiborhencz/Downloads/new/lfstest/.vscode/compileCommands_lfstest/lfstest.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/tiborhencz/Downloads/new/lfstest/Source/lfstest/lfstestGameModeBase.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/tiborhencz/Downloads/new/lfstest/.vscode/compileCommands_lfstest/lfstest.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/tiborhencz/Downloads/new/lfstest/Source/lfstest/lfstestGameModeBase.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/tiborhencz/Downloads/new/lfstest/.vscode/compileCommands_lfstest/lfstest.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	}
+]

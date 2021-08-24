@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "lfstest Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Debug",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Debug",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Debug",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"DebugGame",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"DebugGame",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"DebugGame",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Development",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Development",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Development",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Shipping",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Shipping",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Shipping",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Test",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Test",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"Mac",
+				"Test",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Debug",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Debug",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Debug",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"DebugGame",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"DebugGame",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"DebugGame",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Development",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Development",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Development",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Shipping",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Shipping",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Shipping",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Test",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Test",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstest IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstest IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstest",
+				"IOS",
+				"Test",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstestEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstestEditor",
+				"Mac",
+				"Debug",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstestEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstestEditor",
+				"Mac",
+				"Debug",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstestEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstestEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstestEditor",
+				"Mac",
+				"Debug",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstestEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstestEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstestEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstestEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstestEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstestEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstestEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstestEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstestEditor",
+				"Mac",
+				"Development",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstestEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstestEditor",
+				"Mac",
+				"Development",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"lfstestEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "lfstestEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"lfstestEditor",
+				"Mac",
+				"Development",
+				"/Users/tiborhencz/Downloads/new/lfstest/lfstest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		}
+	]
+}
